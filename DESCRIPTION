@@ -21,6 +21,6 @@ License: MIT License + file LICENSE
 Encoding: UTF-8
 Config/roxygen2/version: 8.1.0
 NeedsCompilation: no
-Packaged: 2026-11-24 13:32:00 UTC; dstanley
+Packaged: 2026-11-24 13:43:57 UTC; dstanley
 Author: David Stanley [aut, cre]
 Maintainer: David Stanley <dstanley@uoguelph.ca>

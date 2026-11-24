@@ -116,6 +116,8 @@ test_that("The printed output has the intended layout and ends with a line break
      capture.output(print(x), file=output_file)
      printed <- readChar(output_file, file.info(output_file)$size)
      unlink(output_file)
+     #a file written on Windows has a carriage return before each line break
+     printed <- gsub("\r\n", "\n", printed, fixed=TRUE)
      expect_equal(printed, paste0(
           "\nOriginal study: r = 0.35, N = 100, 95% CI[0.16, 0.51]",
           "\nReplication study: N = 200",
